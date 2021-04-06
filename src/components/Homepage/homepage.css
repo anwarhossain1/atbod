@@ -1,0 +1,162 @@
+.container {
+    margin: auto 0%;
+  }
+
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    min-width: 320px;
+    max-width: 100%;
+    padding-bottom: 80px;
+ }
+ .flex-item {
+     display:flex;
+ align-items: center;
+ height: 120px;
+ width: 300px;
+ margin: 3px;
+ padding: 10px 10px 20px 10px;
+ }
+.flex-item img{
+flex-grow:0;
+flex-shrink:0;
+}
+ span {
+     padding-left: 5px;
+ }
+
+ .consultus-container{
+     
+    position: relative;
+    text-align: center;
+    color: white;
+ }
+
+ .consultus-container > h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+  }
+
+ .consultus-container > small {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: medium;
+    
+  }
+  .consultus-container > button {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: medium;
+    border-radius: 10px;
+    
+  }
+  .consultus-container > small >span{
+      font-style: italic;
+      font-size: 30px;
+      font-weight: bold;
+      padding-bottom: 30px;
+  }
+  .consultus-container >img{
+   
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    
+  }
+
+
+  .turn-ideas-container{
+
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .turn-ideas-container > h1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .turn-ideas-container >img{
+   
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+
+  .turn-ideas-container > small {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: medium;
+    
+  }
+
+  .turn-ideas-container > button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: medium;
+    
+  }
+
+.subscribe-container{
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.subscribe-container > h1{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .subscribe-container > .ss{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .subscribe-container >img{
+   
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(30%);
+  }
