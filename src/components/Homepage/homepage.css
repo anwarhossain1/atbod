@@ -2,6 +2,49 @@
     margin: auto 0%;
   }
 
+  .heru > h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+  }
+
+ .heru > small {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 240, 240);
+  font-size: 30px;
+  
+}
+.heru > button {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  font-size: medium;
+  background-color: Transparent;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  
+}
+
+
+  .implement-con{
+
+    text-align: center;
+  }
+
+  
+
+
+
 
 
 .flex-container {
@@ -16,6 +59,7 @@
     min-width: 320px;
     max-width: 100%;
     padding-bottom: 80px;
+    
  }
  .flex-item {
      display:flex;
@@ -25,10 +69,21 @@
  margin: 3px;
  padding: 10px 10px 20px 10px;
  }
-.flex-item img{
+.flex-container > img{
 flex-grow:0;
 flex-shrink:0;
 }
+.flex-container > small{
+  font-size: 18px;
+  text-align: left;
+  padding-left: 200px;
+  padding-right: 450px;
+
+}
+
+
+
+
  span {
      padding-left: 5px;
  }
@@ -38,6 +93,7 @@ flex-shrink:0;
     position: relative;
     text-align: center;
     color: white;
+    
  }
 
  .consultus-container > h1 {
@@ -78,11 +134,20 @@ flex-shrink:0;
   }
   .consultus-container >img{
    
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     z-index: -1;
     
+    
   }
+
+
+  .cards-container{
+    padding-left: 28%;
+    padding-right: 10px;
+  }
+
+  
 
 
   .turn-ideas-container{
@@ -90,6 +155,7 @@ flex-shrink:0;
     position: relative;
     text-align: center;
     color: white;
+   
   }
 
   .turn-ideas-container > h1{
@@ -129,10 +195,27 @@ flex-shrink:0;
     
   }
 
+  .latest-con{
+    padding-top:50px;
+  }
+  .latest-con > h1{
+
+    text-align: "center";
+    font-weight: bold;
+    padding-left: 46%;
+    
+
+  }
+  .latest-con > p{
+    padding:'40px 200px'
+
+  }
+
 .subscribe-container{
     position: relative;
     text-align: center;
     color: white;
+    
   }
 .subscribe-container > h1{
     position: absolute;
@@ -157,6 +240,184 @@ flex-shrink:0;
    
     height: 100vh;
     width: 100%;
-    z-index: -1;
     filter: brightness(30%);
+    z-index: -1;
+  }
+
+
+  
+  .icon-bar {
+    width: 60px;
+    background-color: rgb(255, 246, 246);
+    border-radius:25px;
+    position:fixed;
+    top:30%;
+    z-index: 2;
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.3s ease;
+    color: rgb(44, 42, 42);
+    font-size: 36px;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .icon-bar {
+      width: 60px;
+      background-color: rgb(255, 246, 246);
+      border-radius:25px;
+      position:fixed;
+      top:30%;
+      left: 82%;
+      z-index: 2;
+      
+    }
+
+    .flex-container > small{
+      font-size: "15px";
+      text-align: "left";
+      padding-left: 2px;
+      padding-right: 5px;
+    
+    }
+
+    .consultus-container > h1 {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-weight: bold;
+      color: rgb(0, 0, 0);
+      
+    }
+    .consultus-container > small {
+      position: absolute;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: 12px;
+      
+    }
+    .consultus-container > button {
+      position: absolute;
+      top: 95%;
+      left: 70%; 
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: medium;
+      border-radius: 10px;
+      height: 26px;
+      
+    }
+    .consultus-container > small >span{
+        font-style: italic;
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .turn-ideas-container > h1{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+  
+    .turn-ideas-container > small {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color:white;
+      font-size: medium;
+      
+    }
+  
+    .turn-ideas-container > button {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      font-size: medium;
+      
+    }
+
+    .latest-con > h1{
+
+      text-align: "center";
+      font-weight: bold;
+      padding-left: 30%;
+      
+  
+    }
+    .latest-con > p{
+      padding:20px;
+
+    }
+    .cards-container{
+      padding-left: 2%;
+      padding-right: 10px;
+    }
+
+    .heru > h1{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+    }
+  
+   .heru > small {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 240, 240);
+    font-size: 17px;
+    
+  }
+  .heru > button {
+    position: absolute;
+    top: 135%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: medium;
+    background-color: Transparent;
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    
+  }
+
+  .flex-container > img{
+    width: 100%;
+    }
+
+
+
+
+
+
+
+
+
   }

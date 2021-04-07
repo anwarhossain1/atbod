@@ -6,7 +6,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <div>
-        <Menu>
+        <Menu style={{paddingLeft:100}}>
             <Menu.Item style={{float: 'left'}}>Logo</Menu.Item>
             <Menu.Item style={{float: 'left'}}>Services</Menu.Item>
             <Menu.Item style={{float: 'left'}}>Industries</Menu.Item>
@@ -15,6 +15,15 @@ export default class Navbar extends Component {
             <Menu.Item style={{float: 'left'}}>Market place</Menu.Item>
             <Menu.Item style={{float: 'right'}}>contries</Menu.Item>
             <Menu.Item style={{float: 'right'}}>Sign in</Menu.Item>
+
+            
+        </Menu>
+        <Menu style={{paddingLeft:90,background:"#e9ecef"}}>
+            <Menu.Item style={{float: 'left',paddingLeft:50}}>Implement smarter business systems</Menu.Item>
+            <Menu.Item style={{float: 'left'}}>Consult with us</Menu.Item>
+            <Menu.Item style={{float: 'left'}}>Turn Your Ideas Into Reality</Menu.Item>
+            <Menu.Item style={{float: 'left'}}>Connect with Us</Menu.Item>
+           
 
             
         </Menu>

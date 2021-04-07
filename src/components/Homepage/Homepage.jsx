@@ -8,6 +8,7 @@ import img3 from './mask.jpg';
 import SimpleImageSlider from "react-simple-image-slider";
 import "./homepage.css";
 
+
 import { Input, Space } from "antd";
 
 const { Title } = Typography;
@@ -25,25 +26,34 @@ export default class Homepage extends Component {
     return (
       <div className="container">
         <Content>
-          <div>
+          <div className="heru">
+            
             <SimpleImageSlider width="100%" height={900} images={images} />
+            <h1>LOREM IPSUM DOLOR SIT AMET
+CONSETETUR SADIPSCING ELITR</h1>
+<small>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</small>
+<button>Read More</button>
+          </div>
+          <div className="icon-bar">
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-phone"></i></a>
+    <a href="#"><i class="fa fa-commenting-o"></i></a> 
+
+
           </div>
 
-          <Title style={{ textAlign: "center" }}>
+          <div className="implement-con">
+          <Title>
             Implement smarter business systems
           </Title>
-          <Title style={{ textAlign: "center" }} level={3}>
+          <Title style={{ textAlign: "center",paddingBottom:"25px" }} level={3}>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor
           </Title>
+         
           <div className="flex-container">
             <small
-              style={{
-                fontSize: "15px",
-                textAlign: "left",
-                paddingLeft: 200,
-                paddingRight: "500px",
-              }}
             >
               Lorem ipsum Lorem ipsum dolor sit amet, consetetur sadipscing
               <br />
@@ -62,8 +72,9 @@ export default class Homepage extends Component {
               style={{ height: 300 }}
             />
           </div>
+          </div>
           <div className="consultus-container">
-            <img src={img2} style={{ width: "100%", height: 600 }} />
+            <img src={img2}/>
             <h1>Consult with us</h1>
             <small>
               <span>How your business get smarter?</span>
@@ -74,9 +85,48 @@ export default class Homepage extends Component {
             <button>Get Started</button>
           </div>
           <div>
-            <div>
-              <Row
-                style={{ margin: "50px", paddingLeft: 500, paddingRight: 500 }}
+            <div className="cards-container">
+              <Space align="center" style={{padding:"20px"}}>
+              <Card
+                    hoverable
+                    style={{ width: 240 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              <Space align="center" style={{padding:"20px"}}>
+              <Card
+                    hoverable
+                    style={{ width: 240 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              <Space align="center" style={{padding:"20px"}}> 
+              <Card
+                    hoverable
+                    style={{ width: 240 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              {/* <Row
+                className="row"
                 gutter={16}
               >
                 <Col span={8}>
@@ -115,7 +165,7 @@ export default class Homepage extends Component {
                     }
                   ></Card>
                 </Col>
-              </Row>
+              </Row> */}
             </div>
           </div>
           <div className="turn-ideas-container">
@@ -138,23 +188,62 @@ export default class Homepage extends Component {
             </p>
             <button>Get Started</button>
           </div> */}
-          <div style={{ textAlign: "center" }}>
-            <Title style={{paddingTop:70}}>Latest News</Title>
+          <div className="latest-con">
+            <h1>Latest News</h1>
             <hr style={{width:70}} />
-            <p style={{padding:'40px 200px'}}>
+            <p>
               Lorem ipsum Lorem ipsum dolor sit amet, consetetur sadipscing
               elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
               magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
               justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
               takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
-            <div>
-              <Row
-                style={{ margin: "50px", paddingLeft: 300, paddingRight: 300 }}
+            <div className="cards-container">
+            <Space align="center" style={{padding:"20px"}}>
+              <Card
+                    hoverable
+                    style={{ width: 300 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              <Space align="center" style={{padding:"20px"}}>
+              <Card
+                    hoverable
+                    style={{ width: 300 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              <Space align="center" style={{padding:"20px"}}> 
+              <Card
+                    hoverable
+                    style={{ width: 300 }}
+                    cover={
+                      <img
+                        alt="example"
+                        src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                      />
+                    }
+                  ></Card>
+
+              </Space>
+              {/* <Row 
+                // style={{ margin: "50px", paddingLeft: 300, paddingRight: 300 }}
                 gutter={16}
               >
                 <Col span={8}>
-                  <Card
+                  <Card bodyStyle={{padding: "0"}}
                     hoverable
                     style={{ width: 350 }}
                     cover={
@@ -189,7 +278,7 @@ export default class Homepage extends Component {
                     }
                   ></Card>
                 </Col>
-              </Row>
+              </Row> */}
             </div>
           </div>
           <div className="subscribe-container">
@@ -203,7 +292,7 @@ export default class Homepage extends Component {
                 allowClear
                 enterButton="Subscribe"
                 size="large"
-                style={{ width: 500 }}
+                style={{ width: 376}}
                 
               />
             </Space>
