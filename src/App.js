@@ -6,7 +6,7 @@ import Homepage from './components/Homepage/Homepage';
 import Footer from './components/Layouts/Footer';
 function App() {
   return (
-    <div>
+    <div className="App">
       <Layout/>
       <Homepage/>
       <Footer/>
