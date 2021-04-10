@@ -37,7 +37,15 @@
   width: 220px;
   border-color: rgb(255, 255, 255);
   text-align: center;
+  border-style: solid;
   
+}
+
+.heru > .iconDown {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  height: 100px;
 }
 
 
@@ -96,6 +104,20 @@ flex-shrink:0;
 
 }
 
+.flex-container > button{
+  position: absolute;
+  top: 148%;
+  left: 10%;
+  border-radius: 40px;
+    width: 180px;
+    height: 40px;
+    color: rgb(5, 67, 199);
+    background-color: Transparent;
+    border-style: solid;
+    border-color: blue;
+    cursor: pointer;
+}
+
 
 
 
@@ -143,10 +165,11 @@ flex-shrink:0;
     color: rgb(5, 67, 199);
     font-size: medium;
     border-radius: 40px;
-    width: 180px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     border-style: line;
     border-color: blue;
+    padding-bottom: 5px;
     
   }
   .consultus-container > button:hover{
@@ -223,6 +246,7 @@ flex-shrink:0;
     background-color: transparent;
     border-color: white;
     cursor: pointer;
+    border-style: solid;
     
   }
 
@@ -348,6 +372,20 @@ flex-shrink:0;
   }
 
   @media only screen and (max-width: 768px) {
+
+
+
+
+   
+    .cusomer-bg > img{
+      width: 100%;
+      height: auto;
+      padding-bottom: 50px;
+    }
+
+
+
+
     .icon-bar {
       width: 60px;
       background-color: rgb(255, 246, 246);
@@ -381,7 +419,8 @@ flex-shrink:0;
       top: 60%;
       transform: translate(-50%, -50%);
       color: black;
-      font-size: 12px;
+      font-size: 11px;
+      
       
     }
     .consultus-container > button {
@@ -393,6 +432,7 @@ flex-shrink:0;
       font-size: medium;
       border-radius: 10px;
       height: 26px;
+      padding-bottom: 20px;
       
     }
     .consultus-container > small >span{
@@ -419,18 +459,21 @@ flex-shrink:0;
       left: 50%;
       transform: translate(-50%, -50%);
       color:white;
-      font-size: medium;
+      font-size: 12px;
       
     }
   
     .turn-ideas-container > button {
       position: absolute;
-      top: 70%;
+      top: 85%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: black;
+      color: rgb(255, 255, 255);
       font-size: medium;
       
+    }
+    .turn-ideas-container > img{
+      height: 300px;
     }
 
     .latest-con > h1{
@@ -485,6 +528,7 @@ flex-shrink:0;
 
   .flex-container > img{
     width: 100%;
+    height: auto;
     }
 
     .cusomer-bg > h2{
@@ -505,6 +549,13 @@ flex-shrink:0;
       left: 35%;
     }
 
+    .flex-container > button{
+      top: 316%;
+  left: 22%;
+
+      
+    }
+
 
 
 
@@ -514,3 +565,30 @@ flex-shrink:0;
 
 
   }
+
+/* @media  screen  and (min-device-width : 768px)   
+and (max-device-width : 1024px)  {
+
+  .flex-item {
+    display:flex;
+align-items: center;
+height: 120px;
+width: 300px;
+margin: 3px;
+padding: 10px ;
+}
+
+  .flex-container > img{
+    padding-left: 100px;
+    }
+
+    .flex-container > button{
+      top: 350%;
+  left: 22%;
+
+      
+    }
+
+
+
+} */

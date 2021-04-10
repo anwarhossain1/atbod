@@ -42,7 +42,7 @@ export default class Navbar extends Component {
           </Dropdown></div>
           <Menu.Item style={{ float: "right" }}>Sign in</Menu.Item>
         </Menu>
-        <Menu style={{ paddingLeft: 182, background: "#e9ecef" }}>
+        <Menu style={{  background: "#e9ecef" }}>
           <Menu.Item style={{ float: "left", paddingLeft: 35 }}>
             Implement smarter business systems
           </Menu.Item>

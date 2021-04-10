@@ -21,6 +21,9 @@ import lt1 from "./livestream.png";
 import SimpleImageSlider from "react-simple-image-slider";
 import "./homepage.css";
 
+import i1 from './icon-down.png';
+import i2 from './icon-down2.png';
+
 import { Input, Space } from "antd";
 
 const { Title } = Typography;
@@ -46,6 +49,7 @@ export default class Homepage extends Component {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             </small>
             <button>Read More<i style={{paddingLeft:"25px", color:"white",fontSize:"22px"}} class="fa fa-angle-right"></i></button>
+            {/* //<button className="iconDown"><i src={i1}/>ggg<i src={i2}/></button> */}
           </div>
           <div className="icon-bar">
             <a href="#">
@@ -89,12 +93,14 @@ export default class Homepage extends Component {
                 takimata sanctus est Lorem ipsum dolor sit amet.
               </small>
              
+             
 
               <img
                 // style={{ float: "right", paddingBottom: "10px" }}
                 src={img1}
-                style={{ height: 300 }}
+                style={{ height: 300, padding:"40px" }}
               />
+               <button>Learn More <i style={{paddingLeft:"25px",fontSize:"22px"}} class="fa fa-angle-right"></i></button>
             </div>
           </div>
           <div className="consultus-container">
@@ -182,7 +188,7 @@ export default class Homepage extends Component {
             </div>
           </div>
           <div className="turn-ideas-container">
-            <img src={img1} style={{ width: "100%", height: 600 }} />
+            <img src={img1} style={{ width: "100%"}} />
             <h1>Turn Your Ideas Into Reality</h1>
             <small>
               How your business get smarter? Lorem ipsum dolor sit amet,
@@ -337,3 +343,4 @@ export default class Homepage extends Component {
     );
   }
 }
+
