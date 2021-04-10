@@ -16,7 +16,7 @@ const menu = (
 export default class Navbar extends Component {
   render() {
     return (
-      <div>
+      <div >
         <Menu style={{ paddingLeft: 100 }}>
           <Menu.Item style={{ float: "left" }}>
             <img width="70px" height="40px" src={img1} />
@@ -42,7 +42,7 @@ export default class Navbar extends Component {
           </Dropdown></div>
           <Menu.Item style={{ float: "right" }}>Sign in</Menu.Item>
         </Menu>
-        <Menu style={{ paddingLeft: 40, background: "#e9ecef" }}>
+        <Menu style={{ paddingLeft: 182, background: "#e9ecef" }}>
           <Menu.Item style={{ float: "left", paddingLeft: 35 }}>
             Implement smarter business systems
           </Menu.Item>
@@ -50,7 +50,7 @@ export default class Navbar extends Component {
           <Menu.Item style={{ float: "left" }}>
             Turn Your Ideas Into Reality
           </Menu.Item>
-          <Menu.Item style={{ float: "left" }}>Connect with Us</Menu.Item>
+          <button style={{textAlign:"center", marginTop:"6px",marginLeft:"40px",padding:"12px 20px 10px 20px",borderRadius:"40px", width:"200px" ,height:"40px", color:"blue", cursor:"pointer", borderColor:"blue"}}><Menu.Item style={{ float: "left" }}>Connect with Us<i style={{paddingLeft:"25px",fontSize:"12px"}} class="fa fa-angle-right"></i></Menu.Item></button>
         </Menu>
       </div>
     );

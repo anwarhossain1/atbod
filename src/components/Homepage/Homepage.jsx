@@ -45,7 +45,7 @@ export default class Homepage extends Component {
             <small>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             </small>
-            <button>Read More</button>
+            <button>Read More<i style={{paddingLeft:"25px", color:"white",fontSize:"22px"}} class="fa fa-angle-right"></i></button>
           </div>
           <div className="icon-bar">
             <a href="#">
@@ -63,9 +63,9 @@ export default class Homepage extends Component {
           </div>
 
           <div className="implement-con">
-            <Title style={{ paddingTop: "20px" }}>
+            <h1>
               Implement smarter business systems
-            </Title>
+            </h1>
             <Title
               style={{ textAlign: "center", paddingBottom: "25px" }}
               level={3}
@@ -73,7 +73,7 @@ export default class Homepage extends Component {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor
             </Title>
-
+            
             <div className="flex-container">
               <small>
                 Lorem ipsum Lorem ipsum dolor sit amet, consetetur sadipscing
@@ -88,6 +88,7 @@ export default class Homepage extends Component {
                 <br />
                 takimata sanctus est Lorem ipsum dolor sit amet.
               </small>
+             
 
               <img
                 // style={{ float: "right", paddingBottom: "10px" }}
@@ -101,11 +102,11 @@ export default class Homepage extends Component {
             <h1>Consult with us</h1>
             <small>
               <span>How your business get smarter?</span>
-              <br /> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+              <br /><br/> Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
               sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
               aliquyam erat, sed diam
             </small>
-            <button>Get Started</button>
+            <button>Get Started<i style={{paddingLeft:"25px",fontSize:"22px"}} class="fa fa-angle-right"></i></button>
           </div>
           <div>
             <div className="cards-container">
@@ -185,10 +186,10 @@ export default class Homepage extends Component {
             <h1>Turn Your Ideas Into Reality</h1>
             <small>
               How your business get smarter? Lorem ipsum dolor sit amet,
-              consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              consetetur sadipscing elitr<br/> sed diam nonumy eirmod tempor
               invidunt ut labore et dolore magna aliquyam erat, sed diam
             </small>
-            <button>See More Products</button>
+            <button>See More Products<i style={{paddingLeft:"25px",fontSize:"22px"}} class="fa fa-angle-right"></i></button>
           </div>
           {/* <div>
             <img src={img2} style={{ width: "100%", height: 600 }} />
@@ -208,7 +209,7 @@ export default class Homepage extends Component {
             </div>
             <h2>SPECIALITIES</h2>
             <p>" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat "</p>
-            <small><a>EXPLORE MORE</a></small>
+            <small><a><i style={{paddingLeft:"25px",fontSize:"22px"}} class="fa fa-angle-right"></i><i style={{paddingLeft:"2px",paddingRight:"15px",fontSize:"22px"}} class="fa fa-angle-right"></i>EXPLORE MORE<i style={{paddingLeft:"15px",fontSize:"22px"}} class="fa fa-angle-right"></i><i style={{paddingLeft:"2px",fontSize:"22px"}} class="fa fa-angle-right"></i></a></small>
           </div>
 
           <div className="latest-con">
